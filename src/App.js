@@ -72,14 +72,13 @@ export default function App() {
   const filtered = section==='المحذوفين'?deletedClients:clients.filter(c=>{ if(section==='العملاء') return c.type==='عميل'&&!c.completed; if(section==='الموظفين') return c.type==='موظف'; if(section==='المنتهين') return c.type==='عميل'&&c.completed; return true; });
   const btn={margin:'0.5rem',padding:'0.5rem 1rem',border:'none',borderRadius:'0.5rem',cursor:'pointer'};
 
-  if(!loggedIn) return(
-    <div style={{display:'flex',height:'100vh',justifyContent:'center',alignItems:'center',background:'#f1f5f9'}}>
-      <div style={{background:'#fff',padding:'2rem',borderRadius:'1rem',boxShadow:'0 2px 6px rgba(0,0,0,0.1)'}}>
+  if (!loggedIn) return (
+    <div style={{ display: 'flex', height: '100vh', justifyContent: 'center', alignItems: 'center', background: '#f1f5f9' }}>
+      <div style={{ background: '#fff', padding: '2rem', borderRadius: '1rem', boxShadow: '0 2px 6px rgba(0,0,0,0.1)' }}>
         <h2>تسجيل الدخول</h2>
-        <p>admin / admin</p>
-        <input placeholder="اسم المستخدم" value={loginUser} onChange={e=>setLoginUser(e.target.value)} style={{width:'100%',margin:'0.5rem 0'}}/>
-        <input type="password" placeholder="كلمة المرور" value={loginPass} onChange={e=>setLoginPass(e.target.value)} style={{width:'100%',margin:'0.5rem 0'}}/>
-        <button onClick={handleLogin} style={{...btn,background:'#3b82f6',color:'#fff',width:'100%'}}>دخول</button>
+        <input placeholder="اسم المستخدم" value={loginUser} onChange={e => setLoginUser(e.target.value)} style={{ width: '100%', margin: '0.5rem 0' }} />
+        <input type="password" placeholder="كلمة المرور" value={loginPass} onChange={e => setLoginPass(e.target.value)} style={{ width: '100%', margin: '0.5rem 0' }} />
+        <button onClick={handleLogin} style={{ ...btn, background: '#3b82f6', color: '#fff', width: '100%' }}>دخول</button>
       </div>
     </div>
   );
