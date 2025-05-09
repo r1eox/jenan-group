@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jenan-group/static/css/main.aa3e616d.css",
+    "main.js": "/jenan-group/static/js/main.8cba9e75.js",
+    "index.html": "/jenan-group/index.html",
+    "main.aa3e616d.css.map": "/jenan-group/static/css/main.aa3e616d.css.map",
+    "main.8cba9e75.js.map": "/jenan-group/static/js/main.8cba9e75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa3e616d.css",
+    "static/js/main.8cba9e75.js"
+  ]
+}
